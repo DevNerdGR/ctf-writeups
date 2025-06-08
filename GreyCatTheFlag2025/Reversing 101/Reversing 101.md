@@ -13,12 +13,14 @@ We are provided with an executable (`chal`) along with an address which we can c
 There are many ways in which we could have gone about solving this, but I chose to use a combination of Ghidra and GDB.
 
 When attempting to run the provided program, it prompts us for a password, while attempting to connect to the server, we are asked questions (note: this screenshot contains the answers to all the questions, I have included it here so that we can see all of the questions).
-![[serverQns.png]]
+
+![Server Questions](serverQns.png)
 
 The answers to these questions can be obtained by reversing the provided program.
 
 The decompiled program is as shown below (obtained from Ghidra):
-![[decompiled.png]]
+
+![Decompiled code](decompiled.png)
 
 **Q1**: We can use GDB to very easily obtain the address of the main function as the executable is not stripped.
 
