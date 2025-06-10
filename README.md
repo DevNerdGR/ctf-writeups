@@ -1,5 +1,5 @@
 # CTF Writeups
-This repository contains writeups by me for CTFs that I have participated in. Hope that my writeups are helpful and informative!
+This repository contains writeups by me for CTFs that I have participated in. Hope my writeups are helpful and informative!
 # Table of contents
 |No.|CTF|
 |---|---|
