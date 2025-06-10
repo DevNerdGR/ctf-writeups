@@ -10,12 +10,12 @@ For this challenge, we are provided with only a URL to the target website.
 Upon visiting the website, we are greeted with a very bare but functional homepage containing 2 buttons - one that leads us to the products page, and another that leads us to the account creation page.
 
 If we browse over to the products page and scroll to the bottom, we uncover this very interesting chunk of text:
-![[hashAlgo.png]]
+![hash algorithm](hashAlgo.png)
 
 Wow! I see jwt! This must be a challenge relating to JSON Web Tokens (JWTs for short). We can then proceed to create an account and then inspect the cookies stored by this website. Indeed, we find a JWT (note: **never** reveal your JWTs, they are credentials! I only chose to expose mine here as this does not contain real life sensitive data.): `eyJhbGciOiAiQURNSU5IQVNIIiwgInR5cCI6ICJKV1QifQ.eyJ1c2VybmFtZSI6ICJhYWEiLCAicGFzc3dvcmQiOiAiYWFhIiwgImFkbWluIjogImZhbHNlIn0.JZOAYHBBBBNBDDQABXBFJOABZBLBBSOBVLBWVBQRSJJBOJYXDQZBEIRQBSOOFFWB`
 
 Attempting to decode this in a JWT decoder website, we are met with the following:
-![[jwt.png]]
+![decoded jwt](jwt.png)
 
 As we can see, this JWT seems to be using a custom hashing algorithm to validate the integrity and authenticity of the token. We also find that under the payload section, there is a field that specifies whether a user has admin privileges or not. Our challenge now would be to generate a valid JWT token that has the `admin` field set as `true`.
 
