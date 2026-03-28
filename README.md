@@ -5,3 +5,4 @@ This repository contains writeups by me for CTFs that I have participated in. Ho
 |---|---|
 |1.|[GreyCatTheFlag2025 Qualifiers](GreyCatTheFlag2025)|
 |2.|[TJCTF2025](TJCTF2025)|
+|3.|[National Cybersecurity Olympiad 2026 Finals (Singapore)](National Cybersecurity Olympiad Finals 2026)|
